@@ -1,0 +1,10 @@
+name, score
+tom,10
+janet,5
+tom,5
+jerry,1
+jerry,2
+janet,7
+tom,3
+alice,5
+jerry,8

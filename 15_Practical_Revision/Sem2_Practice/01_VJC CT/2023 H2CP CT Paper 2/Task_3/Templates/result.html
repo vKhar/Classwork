@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<table>
+<tr>
+<td>
+Employee name
+</td>
+<td>
+Date of joining
+</td>
+{%for data in full_list%}
+<tr>
+<td>
+{{data[0]}}
+</td>
+<td>
+{{data[1]}}
+</td>
+</tr>
+{%endfor%}
+</tr>
+
+</table>
+
+
+</body>

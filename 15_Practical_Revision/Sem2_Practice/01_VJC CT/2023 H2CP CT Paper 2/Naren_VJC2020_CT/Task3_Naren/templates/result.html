@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <h2>Department: {{ jin_data[0] }}</h2>
+    <table>
+        <tr>
+            <th>Employee's Name</th>
+            <th>Date of Joining</th>
+        </tr>
+        {% for result in jin_data[1] %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		
+	</head>
+	<body>
+		<table>
+			<th>
+				<td>Event Name</td>
+				<td>Artist</td>
+				<td>Type of Event</td>
+				<td> </td>
+			</th>
+			{% for i in data %}
+			<tr>
+				<td>{{ i['name'] }}</td>
+				<td>{{ i['artist'] }}</td>
+				<td>{{ i['type'] }}</td>
+				<td><a href="/event/{{i['id']}}">See performance dates</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

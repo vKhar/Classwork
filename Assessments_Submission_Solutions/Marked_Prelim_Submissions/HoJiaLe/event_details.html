@@ -1,0 +1,51 @@
+<html>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+
+</style>
+{{eventname}}
+<table>
+	<tr>
+		<th>
+		Date
+		</th>
+		<th>
+		Time
+		</th>
+		<th>
+		Venue
+		</th>
+		{% for i in timetable %}
+		<tr>
+			<td>
+				{{i[2]}}
+			</td>
+			<td>
+				{{i[3]}}
+			</td>
+			<td>
+				{{i[4]}}
+			</td>
+		{% endfor %}
+		</tr>
+	</tr>
+</table>

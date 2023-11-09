@@ -1,0 +1,1 @@
+SELECT Player.Name, COUNT(Game),SUM(Game.Score)/COUNT(Game) FROM Player,Game WHERE Player.PlayerID = Game.PlayerID  

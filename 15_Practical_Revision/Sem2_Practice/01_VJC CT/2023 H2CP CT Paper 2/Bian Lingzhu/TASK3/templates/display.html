@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<table>
+
+<tr>
+<th>Employee name</th>
+<th>Date of Joining</th>
+</tr>
+
+{% for row in rows %}
+<tr>
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+</tr>
+{%endfor%}
+
+</table>
+
+</body>
+</html>

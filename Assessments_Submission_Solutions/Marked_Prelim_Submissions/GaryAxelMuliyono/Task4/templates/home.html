@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Event Name</th>
+<th>Artist</th>
+<th>Type of Event</th>
+<th></th>
+</tr>
+{% for item in data %}
+<tr>
+<td>{{item['name']}}</td>
+<td>{{item['artist']}}</td>
+<td>{{item['type']}}</td>
+<td><a href="/times/{{item['id']}}">See performance dates</a></td>
+</tr>
+{% endfor %}
+</table>
+</body>

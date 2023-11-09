@@ -1,0 +1,1 @@
+select Player.Name,sum(Game.Score)/count(Game.GameID) ,count(Game.GameID) from Player inner join Game on Player.PlayerID == Game.PlayerID

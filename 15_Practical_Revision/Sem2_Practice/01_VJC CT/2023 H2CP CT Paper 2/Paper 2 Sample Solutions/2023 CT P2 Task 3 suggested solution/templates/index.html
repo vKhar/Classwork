@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Department</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+	</head>
+
+	<body>
+				
+		<form method='POST' action="{{ url_for('index') }}" >
+			<label for='name'>Enter department: </label>
+			<input type='text' id='name' name='name'>
+			<br>
+
+			<input type='submit' value='Submit'>
+		</form>
+		<br><br>
+		
+		
+		
+		{% if details %}
+
+			<h1>Department details:</h1>
+			<table>
+				<tr>
+					<th>Employee Name</th>
+					<th>Date of joining</th>
+				</tr>
+				{% for row in details %}
+				<tr>
+					<td>{{ row[0] }}</td>
+					<td>{{ row[1] }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+				
+		{% endif %}
+		
+			
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <body>
+        {% for item in data %}
+            <h2>{{item['Name']}}, {{item['CountryCode']}}, {{item['Gender']}}, {{item['DateOfBirth']}}</h2>
+        {% endfor %}
+        <form action="/submit" enctype="multipart/form-data" method="post">
+            <p>Name</p><input type="text" name="name">
+            <p>Country Code</p><input type="text" name="code">
+            <p>Gender</p><input type="text" name="gender">
+            <p>Date Of Birth</p><input type="date" name="date">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

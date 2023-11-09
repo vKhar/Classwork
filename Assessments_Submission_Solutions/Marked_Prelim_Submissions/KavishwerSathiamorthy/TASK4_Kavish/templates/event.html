@@ -1,0 +1,39 @@
+<head>
+    <style>
+        table {
+          width: 75%;
+          margin: 1em auto;
+          border-collapse: collapse;
+        }
+        td, th{
+          padding:0.5em;
+          vertical-align:top;
+          border:solid;
+          text-align: center;
+        }
+        a {
+          text-decoration: solid;
+          font-family: fantasy;
+          color: blue;
+        }
+
+        img {
+          width:100%;
+        }
+    </style>
+</head>
+
+<table>
+   <tr>
+    <td>Date</td>
+    <td>Time</td>
+    <td>Venue</td>
+  <tr>
+  {% for item in data %}
+  <tr>
+    <td>{{item[2]}}</td>
+    <td>{{item[3]}}</td>
+    <td>{{item[4]}}</td>
+  <tr>
+  {% endfor %}
+</table>

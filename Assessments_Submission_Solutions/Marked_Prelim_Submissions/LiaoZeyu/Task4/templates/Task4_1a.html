@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Event Name</th>
+<th>Artist</th>
+<th>Type of Event</th>
+<th></th>
+</tr>
+{%for i in eventL%}
+<tr>
+<td>{{i[1]}}</td>
+<td>{{i[2]}}</td>
+<td>{{i[3]}}</td>
+<td><a href={{i[0]}}>See performance dates</a></td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</html>

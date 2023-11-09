@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>UAS Score (GP, PW, 3H2, 1H1): {{data[0]}}</h1>
+        <p>Available courses</p>
+        <table style="border-color: black; border-width: 10px">
+            {% for course in data[1] %}
+                <tr>
+                    <td>{{course[0]}}</td>
+                    <td>{{course[1]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

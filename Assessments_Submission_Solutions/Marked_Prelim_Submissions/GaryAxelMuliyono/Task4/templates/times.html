@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+</style>
+</head>
+<body>
+<h1>{{data[0]['name']}}</h1>
+<table>
+<tr>
+<th>Date</th>
+<th>Time</th>
+<th>Venue</th>
+</tr>
+{% for item in data %}
+<tr>
+<td>{{item['date']}}</td>
+<td>{{item['time']}}</td>
+<td>{{item['venue']}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>

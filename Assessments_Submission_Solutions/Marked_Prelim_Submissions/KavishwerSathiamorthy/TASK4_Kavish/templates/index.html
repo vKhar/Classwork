@@ -1,0 +1,42 @@
+<head>
+    <style>
+        table {
+          width: 75%;
+          margin: 1em auto;
+          border-collapse: collapse;
+        }
+        td, th{
+          padding:0.5em;
+          vertical-align:top;
+          border:solid;
+          text-align: center;
+        }
+        a {
+          text-decoration: solid;
+          font-family: fantasy;
+          color: blue;
+        }
+
+        img {
+          width:100%;
+        }
+    </style>
+</head>
+
+<table>
+   <tr>
+    <td>Event Name</td>
+    <td>Artist</td>
+    <td>Type of Event</td>
+  <tr>
+  {% for item in data %}
+  <tr>
+    <td>{{item[1]}}</td>
+    <td>{{item[2]}}</td>
+    <td>{{item[3]}}</td>
+    <td>
+        <a href="/{{item[0]}}">See Performance Dates</a>
+    </td>
+  <tr>
+  {% endfor %}
+</table>

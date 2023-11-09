@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/kharw/Documents/A_Computiing/DB/Lessons/superheroes.db" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="1459"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Long Table"/><default_encoding codec=""/><browsetable_info data="AAAABAAAAAgAVABlAHMAdAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8AAAASAFMAdQBwAGUAcgBoAGUAcgBvAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////wAAABIAUAB1AGIAbABpAHMAaABlAHIAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////wAAAAD/////AAAAFABMAG8AbgBnACAAVABhAGIAbABlAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">-- Question 4A
+CREATE TABLE Superhero (
+Name TEXT NOT NULL PRIMARY KEY,
+Gender TEXT NOT NULL,
+Race TEXT,
+Weight INTEGER,
+Height INTEGER,
+PublisherID TEXT NOT NULL,
+FOREIGN KEY(PublisherID) REFERENCES Publisher(ID)
+
+CREATE TABLE `Publisher` (
+	`ID`	TEXT NOT NULL,
+	`PublisherName`	TEXT NOT NULL,
+	`Location`	TEXT,
+	PRIMARY KEY(`ID`)
+);
+
+
+
+
+)</sql><sql name="SQL 3">-- Questin 4c
+SELECT &quot;name&quot; from Superhero
+WHERE 'Gender' = &quot;Female&quot;</sql><sql name="SQL 4">-- Q4d
+
+SELECT * FROM Superhero
+WHERE Race = &quot;Human&quot; AND Weight &gt; 70</sql><sql name="SQL 5">-- Q4e
+SELECT name FROM 
+Superhero
+WHERE Race &lt;&gt; &quot;Human&quot; AND 
+Height &gt;= 160 AND 
+Height &lt;= 190</sql><sql name="SQL 9">SELECT Race, COUNT(*) Number FROM Superhero
+WHERE Race is NOT NULL
+GROUP BY Race
+
+
+
+
+</sql><sql name="SQL 10">SELECT Race, COUNT(*) Number FROM Superhero
+GROUP BY Race
+HAVING Race IS NOT NULL</sql><sql name="SQL 11">-- 4b
+UPDATE Publisher 
+SET Location = &quot;USA&quot;
+WHERE Location = &quot;US&quot;</sql><sql name="SQL 12">SELECt 'First Name' FROM Test
+WHERE [First Name] = 'John Wong'</sql><sql name="SQL 13">CREATE TABLE 'Long Table' ('Sur Name' TEXT, 'Long Story' TEXT);</sql><current_tab id="8"/></tab_sql></sqlb_project>

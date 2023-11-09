@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Photogram</title>
+	</head>
+	<body>
+		<form action="{{url_for('home')}}" method="post">
+			Enter UserID: <input name="userid">
+			<input type="submit" value="search">
+		</form>
+		
+		{% if user_id %}
+			<p>UserID {{user_id}} is following the following Users: <p>
+		
+		<table border='1' style='border-collapse:collapse'>
+			<tr>
+				<th>UserID</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Country</th>
+			</tr>
+			{% for record in records %}
+				<tr>
+					<td>{{record[0]}}</td>
+					<td>{{record[1]}}</td>
+					<td>{{record[2]}}</td>
+					<td>{{record[3]}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+		{% endif %}
+	</body>
+</html>

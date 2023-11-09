@@ -1,0 +1,125 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    .product {
+      width: 75%;
+      border: solid;
+      margin: 1em auto;
+      padding: 1em;
+      text-align: center;
+      color: black;
+      background-color:white;
+    }
+    
+    img {
+      width: 100%;
+    }
+    #special {
+      background-color:black;
+      color:white; 
+      font-size:1em; 
+      font-family:cursive;
+      border: black;
+    }
+    .container {
+      background-color:grey;
+      width: 75%;
+      margin:1em auto;
+      padding: 1em
+    } 
+    .grid-container{
+      display: grid;
+      grid-template-columns:auto auto auto;
+      gap: 2em;
+      margin: 1em auto;
+      width: 75%;
+    }
+    
+    #double {
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+        font-size: 0.2em;
+      }
+      .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 1em auto;
+        width: 75%;
+    }
+  }
+  </style>
+  </head>
+
+<body>
+<div class="grid-container">
+
+<div class="container">
+<div class="product" id="special">
+  Code Editor
+</div>
+<div class="product">
+  A WYSIWYG editor for wrting code
+</div>
+<div class="product">
+  $12.99
+</div>
+<div class="product">
+<img src="https://miro.medium.com/max/1400/1*hCOOFW4sQi1jz7-2u1sJGQ.png" /> 
+</div>
+</div>
+
+<div class="container">
+<div class="product" id="special">
+   Monkey NFT
+</div>
+<div class="product">
+  Each NFT corresponds to a cartoon ape customized with unique color schemes, facial expressions, and outfits.
+</div>
+<div class="product">
+  $99,999.99
+</div>
+<div class="product">
+<img src="https://lh3.googleusercontent.com/gA4IAtO3zj2xuZDJaRKltyDMZFAbmk7WuNYL1M2OTT404ds9O_qi1IS6hnRq9bZUtjgByZsNAW25WlpdI95me15s6-LV6rsyhfb5OZw=w1400-k" /> 
+</div>
+</div>  
+  
+<div class="container">
+  <div class="product" id="special">
+    Code Editor
+  </div>
+  <div class="product">
+    A WYSIWYG editor for wrting code
+  </div>
+  <div class="product">
+    $12.99
+  </div>
+  <div class="product">
+  <img src="https://miro.medium.com/max/1400/1*hCOOFW4sQi1jz7-2u1sJGQ.png" /> 
+  </div>
+</div>
+
+<div class="container" id="double">
+  <div class="product" id="special">
+     Pet Cat
+  </div>
+  <div class="product">
+    The Siamese cat (Thai: แมวไทย, Maeo Thai; แมวสยาม, Maeo Seeaam) is one of the first distinctly recognized breeds of Asian cat. Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand (formerly known as Siam), the original Siamese became one of the most popular breeds in Europe and North America in the 19th century. The carefully refined, more extreme-featured, modern-style Siamese is characterized by blue almond-shaped eyes; a triangular head shape; large ears; an elongated, slender, and muscular body; and various forms of point colouration. Other than colouration, the modern-style Siamese bears little resemblance to the original stock, and the more moderate, traditional, or "old-style" Siamese, with a much rounder head and body, has been re-established by multiple registries as the Thai cat. The International Cat Association describes the modern Siamese as affectionate, social, intelligent, and playful into adulthood, often enjoying a game of fetch.[1] Siamese tend to seek human interaction and also like companionship from other cats.
+  </div>
+  <div class="product">
+    $2.99
+  </div>
+  <div class="product">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Siam_lilacpoint.jpg/330px-Siam_lilacpoint.jpg" /> 
+  </div>
+  </div>
+
+</div>
+</body>
+</html>    

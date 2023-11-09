@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Final Score</title>
+	</head>
+	<body>
+		<h1>Final Score</h1>
+		<h2>{{ score }}</h2>
+		<h1>Available Courses:</h1>
+		<table>
+			{% for course in courses %}
+			<tr>
+				<td>{{course[0]}}</td>
+				<td>{{course[1]}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

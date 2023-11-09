@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+<table>
+<div>Available Courses</div>
+{% for i in data %}
+<tr>
+	<td>{{i[0]}}</td>
+	<td>{{i[1]}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

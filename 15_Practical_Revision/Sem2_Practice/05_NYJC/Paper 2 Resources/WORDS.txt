@@ -1,0 +1,7 @@
+{'word': 'property', 'definition': 'thing(s) belonging to someone'}
+{'word': 'obtain', 'definition': 'come into possession of'}
+{'word': 'venture', 'definition': 'undertake a risky course of action'}
+{'word': 'policy', 'definition': 'a plan of action adopted by an individual or organisation'}
+{'word': 'generate', 'definition': 'bring into existence'}
+{'word': 'yield', 'definition': 'give or supply'}
+{'word': 'stock', 'definition': 'capital raised by a corporation through the issue of shares'}

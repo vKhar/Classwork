@@ -1,0 +1,78 @@
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+<html>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+
+</style>
+{{eventname}}
+<table>
+	<tr>
+		<th>
+		Event Name
+		</th>
+		<th>
+		Artist
+		</th>
+		<th>
+		Type of Event
+		</th>
+		<th>
+		
+		</th>
+		{% for event in events %}
+		<tr>
+			<td>
+				{{event[1]}}
+			</td>
+			<td>
+				{{event[2]}}
+			</td>
+			<td>
+				{{event[3]}}
+			</td>
+			<td>
+				<a href = {{event[4]}}> See performance dates </a>			
+			</td>
+		{% endfor %}
+		</tr>
+	</tr>
+</table>
+

@@ -1,0 +1,9 @@
+class Node:
+    def __init__(self, data): 
+        self.data = data           #String data type
+        self.left_pointer = None   #Node object
+        self.right_pointer = None  #Node object
+
+class Tree:
+    def __init__(self):
+        self.root = None    #Node object

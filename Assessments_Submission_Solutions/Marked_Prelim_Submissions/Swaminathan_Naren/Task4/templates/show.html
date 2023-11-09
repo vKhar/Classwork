@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+</style>
+<head><b><h1>{{jin_data[0][0]}}</h1></b></head>
+<body>
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Time</th>
+		<th>Venue</th>
+	</tr>
+	{% for Event in jin_data%}
+	<tr>
+		<td>{{Event[1]}}</td>
+		<td>{{Event[2]}}</td>
+		<td>{{Event[3]}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

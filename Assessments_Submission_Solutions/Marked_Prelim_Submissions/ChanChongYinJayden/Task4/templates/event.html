@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event</title>
+	</head>
+	<body>
+		<h1>{{ name }}</h1>
+		<table>
+			<th>
+				<td>Date</td>
+				<td>Time</td>
+				<td>Venue</td>
+			</th>
+			{% for i in data %}
+			<tr>
+				<td>{{ i['date'] }}</td>
+				<td>{{ i['time'] }}</td>
+				<td>{{ i['venue'] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

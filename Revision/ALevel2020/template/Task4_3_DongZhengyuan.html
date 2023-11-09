@@ -1,0 +1,39 @@
+<html>
+<head>
+	<style>
+		table{
+	    	margin: 1em auto;
+	    	padding: 1em;
+	    	text-align: center;
+	    	border-collapse: collapse;
+	    	font-family: "Comic Sans MS", "Comic Sans", cursive;
+  	  	}
+	    td{
+	    	border: solid;
+	    	text-aligh: center;
+	    	padding: 1em;
+	    }
+	    th{
+	    	border: solid;
+	    	text-align: center;
+	    	padding: 1em;
+	    }
+	</style>
+</head>
+<body>
+	<table class="people-table">
+		<tr>
+			<th>Full Name</th>
+			<th>Screen Name</th>
+			<th>Identity</th>
+		</tr>
+		{%for i in jin_data %}
+		<tr>
+			<td>{{i[0]}}</td>
+			<td>{{i[1]}}</td>
+			<td>{{i[2]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

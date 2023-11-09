@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+</style>
+<body>
+<table>
+	<tr>
+		<th>Event Name</th>
+		<th>Artist</th>
+		<th>Type of Event</th>
+		<th></th>
+	</tr>
+	{% for Event in jin_data%}
+	<tr>
+		<td>{{Event[1]}}</td>
+		<td>{{Event[2]}}</td>
+		<td>{{Event[3]}}</td>
+		<td><a href="/{{Event[0]}}">See performace dates</a></td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

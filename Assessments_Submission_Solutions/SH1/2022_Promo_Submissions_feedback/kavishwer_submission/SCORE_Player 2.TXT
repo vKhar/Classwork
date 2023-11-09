@@ -1,0 +1,5 @@
+Player 2 Scoresheet
+Frame   1   2   3   4   5   6   7   8   9   10
+Pins Hi   [ 0 | 5 ][ 8 | 0 ][ X ][ 0 | 5 ][ X ][ 6 | 4 ][ 0 | 5 ][ 8 | 1 ][ 9 | 1 ][5 | 0]
+Framescore   5  8  15  5  20  10  5  9  15  5
+Cum. Score   5  13  28  33  53  63  68  77  92  97

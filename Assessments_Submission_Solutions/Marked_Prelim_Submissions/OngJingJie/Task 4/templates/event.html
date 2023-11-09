@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+
+table {
+  width: 75%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+td, th{
+  padding:0.5em;
+  vertical-align:top;
+  border:solid;
+  text-align: center;
+}
+
+a {
+  text-decoration: solid;
+  font-family: fantasy;
+  color: blue;
+}
+
+img {
+  width:100%;
+}
+
+</style>
+</head>
+<body>
+{{ jin_data[0][0] }}
+
+<table>
+<tr>
+	<th>Date</th>
+	<th>Time</th>
+	<th>Venue</th>
+</tr>
+{% for row in jin_data %}
+<tr>
+	<td>{{ row[1] }}</td>
+	<td>{{ row[2] }}</td>
+	<td>{{ row[3] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+
+
+</html>
